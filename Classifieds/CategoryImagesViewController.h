@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CommonLogic.h"
 
 @interface CategoryImagesViewController : UICollectionViewController
+
+@property (nonatomic, assign) NSInteger categoryIndex;
+@property (nonatomic, strong) CommonLogic *logic;
 
 @end

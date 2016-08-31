@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CommonLogic.h"
 
 @interface CategoryViewController : UICollectionViewController
+
+@property (nonatomic, strong) CommonLogic *logic;
 
 @end

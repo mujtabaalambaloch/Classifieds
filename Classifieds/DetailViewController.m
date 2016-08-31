@@ -9,6 +9,9 @@
 #import "DetailViewController.h"
 
 @interface DetailViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *listingLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *listingImageView;
+@property (weak, nonatomic) IBOutlet UILabel *quoteLabel;
 
 @end
 
@@ -16,7 +19,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    self.listingLabel.text = [[NSString stringWithFormat:@"The listing %@",self.listingTitle] capitalizedString];
+    self.listingImageView.image = self.listingImage;
+    self.quoteLabel.text = self.listingQuote;
+    
 }
 
 - (void)didReceiveMemoryWarning {

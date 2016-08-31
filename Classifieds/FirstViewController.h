@@ -7,7 +7,13 @@
 //
 
 #import "ViewController.h"
+#import "CategoryModel.h"
+#import "CommonLogic.h"
 
-@interface FirstViewController : ViewController
+@interface FirstViewController : UIViewController
+
+@property (nonatomic, strong) CommonLogic *logic;
+@property (nonatomic, strong) CategoryModel *randomCategory;
+@property (nonatomic, strong) NSString *quote;
 
 @end

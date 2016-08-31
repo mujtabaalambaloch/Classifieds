@@ -7,7 +7,11 @@
 //
 
 #import <JSONModel/JSONModel.h>
+#import "PhotosModel.h"
 
 @interface FlickrSearchModel : JSONModel
+
+@property (nonatomic, strong) PhotosModel <Optional> * photos;
+@property (nonatomic, strong) NSString <Optional> *stat;
 
 @end

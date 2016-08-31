@@ -10,4 +10,8 @@
 
 @interface Network : NSObject
 
+typedef void (^CompletionHandler)(BOOL success, NSDictionary *response, NSError *error);
+
+- (void)getRequestURL:(NSString *)url params:(NSDictionary *)params completion:(CompletionHandler)completion;
+
 @end

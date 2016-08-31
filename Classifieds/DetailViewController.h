@@ -8,6 +8,10 @@
 
 #import "ViewController.h"
 
-@interface DetailViewController : ViewController
+@interface DetailViewController : UIViewController
+
+@property (nonatomic, strong) NSString *listingTitle;
+@property (nonatomic, strong) UIImage *listingImage;
+@property (nonatomic, strong) NSString *listingQuote;
 
 @end

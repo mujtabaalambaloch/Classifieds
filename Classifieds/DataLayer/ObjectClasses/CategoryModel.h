@@ -10,4 +10,7 @@
 
 @interface CategoryModel : JSONModel
 
+@property (nonatomic, strong) NSString <Optional> * categoryName;
+@property (nonatomic, strong) NSArray <Optional> *categoryArray;
+
 @end
